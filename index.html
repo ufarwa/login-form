@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="form-button">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icon">
+                <img src="./images/fb.png" alt="">
+                <img src="./images/LI.png" alt="">
+                <img src="./images/insta.png" alt="">
+           </div>
+           <div id="login" class="input-group">
+            <input type="text" name="" id="User-Id" class="input-field" placeholder="User-Id" required>
+            <div class="password-field">
+                <input type="password" name="" id="Password" class="input-field" placeholder="Enter Password" required> <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <i class="fa fa-eye"></i>
+                </span>
+            </div>
+            <input type="checkbox" name="" id="" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-button" onclick="submit()">Log in</button>
+        </div>  
+        <div id="register" class="input-group">
+            <input type="text" name="" id="User-Id" class="input-field" placeholder="User-Id" required>
+            <input type="password" name="" id="Password" class="input-field" placeholder="Enter Password" required>
+            <p id="passValidity"></p>
+            <input type="email" name="" id="Email" class="input-field" placeholder="Email Id" required>
+            <input type="checkbox" name="" id="" class="check-box"><span>I Agree to the terms &amp; conditions</span>
+            <button  type="submit" class="submit-button">Register</button>
+        </div>
+        </div>
+    </div>
+    
+
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
